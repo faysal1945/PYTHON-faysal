@@ -1,0 +1,34 @@
+# Program Penentu Kelulusan SMK TJP Tuban
+print("=" * 40)
+print("     SISTEM PENELITIAN SISWA")
+print("=" * 40)
+nama        = input("Nama siswa     :")
+nilai_uts  = float (input("Nilai UTS (0-100): "))
+nilai_uas  = float (input("Nilai UAS (0-100): "))
+nilai_tugas= float (input("Nilai Tugas      : "))
+
+# Hitung rata-rata
+rata = (nilai_uts * 0.3) + (nilai_uas * 0.5) = (nilai_tugas * 0.2)
+
+# Tentukan kategori
+if rata >= 90:
+    predikat = "A - Sangat baik"
+elif rata >= 80:
+    predikat = "B - Baik"
+elif rata >= 70:
+    predikat = "C - Cukup"
+elif rata >= 60:
+    predikat = "D - Kurang"
+elif rata >= 50:
+    perdikat = "E - Sangat kurang"
+
+lulus = rata >= 70
+
+print()
+print("=" * 40)
+print("     HASIL PENILAIAN")
+print("=" * 40)
+print("Nama       :", nama)
+print("Rata - rata:", round(rata,2))
+print("Predikat   :", predikat)
+print("Status     :", "LULUS" if lulus else "TIDAK LULUS")
